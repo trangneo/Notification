@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="9dip"
+        android:layout_marginTop="20dip"
+        android:text="It is coming in seconds"
+        android:textColor="#444444"
+        android:textSize="10pt" />
+
+    <EditText
+        android:id="@+id/in_time"
+        android:layout_width="120dip"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_time"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_toRightOf="@id/tv_time"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="number" />
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="9dip"
+        android:layout_marginTop="20dip"
+        android:text="Title"
+        android:textColor="#444444"
+        android:textSize="10pt" />
+
+    <EditText
+        android:id="@+id/edtTitle"
+        android:layout_width="120dip"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_time"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_toRightOf="@id/tv_time"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="9dip"
+        android:layout_marginTop="20dip"
+        android:text="Text you want to show"
+        android:textColor="#444444"
+        android:textSize="10pt" />
+
+    <EditText
+        android:id="@+id/edtText"
+        android:layout_width="120dip"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_time"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_toRightOf="@id/tv_time"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btn_run"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/in_time"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:text="OK" />
+
+</LinearLayout>
